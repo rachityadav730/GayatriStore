@@ -5,7 +5,12 @@ import Login from './Pages/Login'
 import Wishlist from './Pages/Wishlist'
 import Boy from './Pages/Boy'
 import Girl from './Pages/Girl'
-import Kid from './Pages/Kid'
+import Book from './Pages/Book'
+import School from './Pages/School'
+
+
+import PageNotFound from './Pages/PageNotFound'
+
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -20,7 +25,10 @@ function App() {
       <Route path="/wishlist" element={ <Wishlist/>}/>
       <Route path="/shop/girl" element={ <Girl/>}/>
       <Route path="/shop/boy" element={ <Boy/>}/>
-      <Route path="/shop/kid" element={ <Kid/>}/>
+      <Route path="/shop/books" element={ <Book/>}/>
+      <Route path="/school" element={ <School/>}/>
+      <Route path="/shop/books" element={ <Book/>}/>
+      <Route path="*" element={<PageNotFound />} />
     </Routes>
     </BrowserRouter>
     

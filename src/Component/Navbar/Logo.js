@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import logo from '../../Asset/Images/logo.jpeg';
 import Box from '@mui/material/Box';
 import NavItem from './NavItems'
@@ -16,15 +17,15 @@ return (
         <Toolbar disableGutters>
         <Grid container >
             <Grid item xs ={1}>
-            <img src={logo} width={'100px'} alt = "Company logo"/>
+                <Link to="/">
+                    <img src={logo} width={'100px'} alt = "Company logo"/>
+                </Link>
             </Grid>
             <Grid item xs ={11}>
             <NavItem/>
             </Grid>
         </Grid>
     
-       
-      
     </Toolbar>
         </Container>      
     </AppBar>

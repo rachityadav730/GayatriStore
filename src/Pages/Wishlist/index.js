@@ -1,15 +1,12 @@
 import React from "react";
-
-
-const WishList = () =>{
+import CommonDesign from '../../CommonDesign'
+const Index = () =>{
     return(
-        <div>
-            <h1>
-                i am a wishlist page
-            </h1>
-        </div>
+            <CommonDesign>
+            i am on wishlist  page
+            </CommonDesign>
+            
     )
 }
 
-
-export default WishList
+export default Index

@@ -16,6 +16,8 @@ import PersonPinIcon from '@mui/icons-material/PersonPin';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import { Grid } from '@mui/material';
+import { Link } from "react-router-dom";
+
 const Index = () => {
 
     const [anchorElNav, setAnchorElNav] = useState(null);
@@ -97,10 +99,10 @@ const handleChange = (event, newValue) => {
             indicatorColor="secondary"
             aria-label="secondary tabs example"
             >
-            <Tab value="one" label="Boys" />
-            <Tab value="two" label="Girls" />
-            <Tab value="three" label="Kids" />
-            <Tab value="four" label="Books" />
+            <Tab component={Link} to={`/shop/boy`} value="one" label="Boys" />
+            <Tab component={Link} to={`/shop/girl`} value="two" label="Girls" />
+            <Tab component={Link} to={`/shop/books`} value="three" label="Books" />
+          
         </Tabs>
             
         </Grid>
@@ -140,7 +142,10 @@ const handleChange = (event, newValue) => {
       >
         <Typography>Welcome</Typography>
         <Typography>To access account and manage orders</Typography>
-        <Button>Sign up and login</Button>
+        <Link to= "/login">
+          <Button >Sign up and login</Button>
+        </Link>
+        
         <MenuItem onClick={handleClose}>Profile</MenuItem>
         <MenuItem onClick={handleClose}>My account</MenuItem>
         <MenuItem onClick={handleClose}>Logout</MenuItem>
@@ -149,8 +154,8 @@ const handleChange = (event, newValue) => {
       <Grid item xs = {2}>
 
           <Tabs value={value} onChange={handleChange} aria-label="icon tabs example">
-      <Tab icon={<FavoriteBorderOutlinedIcon />} aria-label="favorite" />
-      <Tab icon={<ShoppingBagOutlinedIcon />} aria-label="person" />
+      <Tab component={Link} to={`/wishlist`}  icon={<FavoriteBorderOutlinedIcon />} aria-label="favorite" />
+      <Tab component={Link} to={`/cart`}  icon={<ShoppingBagOutlinedIcon />} aria-label="person" />
     </Tabs>
             
         </Grid>

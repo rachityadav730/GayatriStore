@@ -1,13 +1,12 @@
-import React,{ useState } from 'react'
-const Index =() =>{
+import React from "react";
+import CommonDesign from '../../CommonDesign'
+const Index = () =>{
     return(
-        <div>
-            <h1>
-                hello i am layout page
-            </h1>
-        </div>
+            <CommonDesign>
+            i am on Login page
+            </CommonDesign>
+            
     )
 }
-
 
 export default Index

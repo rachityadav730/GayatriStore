@@ -6,29 +6,27 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-const MainCard = (props) => {
+
+const MasterCard = (props) => {
   console.log("allprops1231212",props)
   return (
             <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-      <Link to = {"/school"}>
-        <CardMedia
-          component="img"
-          height="140"
-          // image="https://mui.com/static/images/cards/contemplative-reptile.jpg"
-          image={props && props.item_data && props.item_data.name}
-
-          alt="green iguana"
-        />
+        <Link to = {"/school"}>
+            <CardMedia
+            component="img"
+            height="140"
+            image={props && props.src}
+            alt="green iguana"
+            />
         </Link>
+        
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Lizard
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {
-             props && props.item_data && props.item_data.description
-            }
+            adksdfkasnmdfkasndfknasdkfnaslkdnflaksdfakl
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -36,4 +34,4 @@ const MainCard = (props) => {
   )
 }
 
-export default MainCard
+export default MasterCard

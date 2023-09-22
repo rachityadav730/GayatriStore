@@ -1,13 +1,12 @@
 import React from "react";
-
-const Cart =()=>{
+import CommonDesign from '../../CommonDesign'
+const Index = () =>{
     return(
-        <div>
-            <h1>
-                hello i am cat page
-            </h1>
-        </div>
+            <CommonDesign>
+            i am on cart page
+            </CommonDesign>
+            
     )
 }
 
-export default Cart
+export default Index

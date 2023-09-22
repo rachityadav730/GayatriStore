@@ -5,25 +5,18 @@ import GridCard from '../../Component/GridCard'
 import Grid from '../../Component/Grid'
 import Footer from '../../Component/Footer'
 import Box from '@mui/material/Box';
+import CommonDesign from '../../CommonDesign'
 
 
 const index = () => {
   return (
     <div>
-      <Box sx = {{
-      display: 'flex',
-      flexDirection: 'column',
-      height: '100vh'
-    }}>
-      <Box>
-      <Logo/>
-        <Carousel/>
-        <GridCard/>
-        <Grid/>
-        <Footer/>
-      </Box>
-    </Box>
-        
+
+      <CommonDesign>
+          <Carousel/>
+          <GridCard/>
+          <Grid/>
+      </CommonDesign>  
     </div>
   )
 }

@@ -13,9 +13,9 @@ const index = () => {
     <div>
 
       <CommonDesign>
-          <Carousel/>
-          <GridCard/>
-          <Grid/>
+          <h1>
+            here filter and all data comes
+          </h1>
       </CommonDesign>  
     </div>
   )
