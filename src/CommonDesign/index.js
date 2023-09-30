@@ -5,24 +5,27 @@ import GridCard from '../Component/GridCard'
 import Grid from '../Component/Grid'
 import Footer from '../Component/Footer'
 import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import CssBaseline from '@mui/material/CssBaseline';
 
 
 const index = (props) => {
   return (
-    <div>
-      <Box sx = {{
+      <Box pt={10} sx = {{
       display: 'flex',
-      flexDirection: 'column',
+      // flexDirection: 'column',
       height: '100vh'
     }}>
-      <Box>
+      {/* <Box> */}
+      <CssBaseline>
+      <Paper>
       <Logo/>
         {props.children}
         <Footer/>
-      </Box>
+      </Paper>
+      </CssBaseline>
+      {/* </Box> */}
     </Box>
-        
-    </div>
   )
 }
 
